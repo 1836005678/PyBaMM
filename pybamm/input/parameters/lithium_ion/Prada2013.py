@@ -293,9 +293,9 @@ def get_parameter_values():
         "Maximum concentration in positive electrode [mol.m-3]": 22806.0,
         "Positive electrode diffusivity [m2.s-1]": 5.9e-18,
         "Positive electrode OCP [V]": LFP_ocp_ashfar2017,
-        "Positive electrode porosity": 0.12728395,
-        "Positive electrode active material volume fraction": 0.28485556,
-        "Positive particle radius [m]": 1e-08,
+        "Positive electrode porosity": 0.26, # Lain2019
+        "Positive electrode active material volume fraction": 0.5846, # Calculated as 0.79*(1-0.26) from Lain2019
+        "Positive particle radius [m]": 5e-08, # Lain 2019
         "Positive electrode Bruggeman coefficient (electrode)": 1.5,
         "Positive electrode Bruggeman coefficient (electrolyte)": 1.5,
         "Positive electrode cation signed stoichiometry": -1.0,
@@ -328,8 +328,8 @@ def get_parameter_values():
         "Number of cells connected in series to make a battery": 1.0,
         "Lower voltage cut-off [V]": 2.0,
         "Upper voltage cut-off [V]": 4.4,
-        "Initial concentration in negative electrode [mol.m-3]": 28831.45783,
-        "Initial concentration in positive electrode [mol.m-3]": 35.3766672,
+        "Initial concentration in negative electrode [mol.m-3]": 13584, # For 1.1 Ah capacity
+        "Initial concentration in positive electrode [mol.m-3]": 35, # For 1.1 Ah capacity
         "Initial temperature [K]": 298.15,
         # citations
         "citations": ["Chen2020", "Lain2019", "Prada2013", "Nyman2008"],
